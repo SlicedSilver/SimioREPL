@@ -9,6 +9,9 @@ The code uses the Microsoft Roslyn Compiler API. more info here: http://en.wikip
 If you want to play around with the source code then you will probably need to install the Roslyn CTP. Download here: http://msdn.microsoft.com/en-gb/roslyn. I created the solution using Visual Studio 2012 and I believe that the roslyn compiler only works with VS 2012 at the moment.
 
 ### How to install:
+
+You can get the latest version inside the `Latest Compiled Release` folder.
+
 1. Install dll into either:
 `C:\Program Files (x86)\Simio\UserExtensions\SimioREPL\SimioREPL.dll`
 or
