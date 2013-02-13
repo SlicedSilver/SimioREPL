@@ -10,11 +10,11 @@ If you want to play around with the source code then you will probably need to i
 
 ### How to install:
 1. Install dll into either:
-"C:\Program Files (x86)\Simio\UserExtensions\SimioREPL\SimioREPL.dll"
+`C:\Program Files (x86)\Simio\UserExtensions\SimioREPL\SimioREPL.dll`
 or
-"C:\Program Files\Simio\UserExtensions\SimioREPL\SimioREPL.dll"
-2. The folder structure should be ..\Simio\UserExtensions\SimioREPL
-3. The drop-down code snippet tool (green drop-down) loads stored functions stored in the following file: "c:\SimioReferences\REPL_Functions.txt".
+`C:\Program Files\Simio\UserExtensions\SimioREPL\SimioREPL.dll`
+2. The folder structure should be `..\Simio\UserExtensions\SimioREPL`
+3. The drop-down code snippet tool (green drop-down) loads stored functions stored in the following file: `c:\SimioReferences\REPL_Functions.txt`.
 
 ### How to get started:
 1. Create a new model in simio.
@@ -33,7 +33,7 @@ You can find out the current value of a variable by entering its name without th
     x or x*2 + 10 -3
 ```
 This will display the value in the output text box at the bottom of the window.
-I've added the ability to use Write() and WriteLine(), just like in a console application. for example:
+I've added the ability to use `Write()` and `WriteLine()`, just like in a console application. for example:
 ```csharp
     WriteLine(object.ObjectName);
 ```
@@ -53,14 +53,14 @@ Add some objects to the model
     ILinkObject path2 = intelligentObjects.CreateLink("Path",serverObject.Nodes[1],sinkObject.Nodes[0],null) as ILinkObject;
 ```
 
-[Execute] <ctrl + enter>  or <press the execute button>
+`[Execute]` <ctrl + enter>  or <press the execute button>
 
 
 Move the source object
 ```csharp
     intelligentObjects["Source1"].Location = new FacilityLocation(-4.5, 0, -2);
 ```
-[Execute]
+`[Execute]`
 
 
 List all the nodes on the server object
@@ -70,7 +70,7 @@ List all the nodes on the server object
         WriteLine(node);
     }
 ```
-[Execute]
+`[Execute]`
 
 
 List all the objects in the model
@@ -81,4 +81,4 @@ Code:
       WriteLine(ob.ObjectName);
     }
 ```
-[Execute]
+`[Execute]`
