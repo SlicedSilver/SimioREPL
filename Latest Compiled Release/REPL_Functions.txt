@@ -1,0 +1,28 @@
+<<*List Objects*>>
+IIntelligentObjects objects = context.ActiveModel.Facility.IntelligentObjects as IIntelligentObjects;
+if (objects != null)
+{
+	foreach (var ob in objects)
+	{
+			WriteLine(String.Format("{0}  | {1}",ob.ObjectName,ob.TypeName));
+	}
+}
+<<*List Specific Objects*>>
+IIntelligentObjects objects = context.ActiveModel.Facility.IntelligentObjects as IIntelligentObjects;
+if (objects != null)
+{
+	foreach (var ob in objects)
+	{
+		if (ob.TypeName == "Server")
+		{
+			WriteLine(ob.ObjectName);
+		}
+	}
+}
+<<*List Properties*>>
+IIntelligentObject ob = context.ActiveModel.Facility.IntelligentObjects[objectName];
+foreach (var prop in ob.Properties)
+{
+	WriteLine(prop.Name);
+}
+<<*END*>>
